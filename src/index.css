@@ -1,13 +1,92 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
 }
+
+.container {
+  max-width: 90vw;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 850px;
+  border: 1px solid #32a1ce;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: thick double #32a1ce;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.rowed {
+  min-width: 80vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.books {
+  min-width: 55vw;
+  border: 1px solid #32a1ce;
+  border-radius: 5px;
+  margin-right: 75px;
+}
+
+.book {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.book h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.issue-container {
+  width: 40vw;
+  max-height: 80vh;
+  border: 1px solid #32a1ce;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
